@@ -1,0 +1,27 @@
+.{
+}
+
+.container-fluid{
+    background: #383838;
+    display: flex;
+    justify-content: center;
+}
+.container-bar p{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.navbar-nav a{
+    font-size: 20px;
+
+}
+
+.logo{
+    height:70px;
+    width: 70px;
+}
+.search{
+    height: 30px;
+    width: 250px;
+}
