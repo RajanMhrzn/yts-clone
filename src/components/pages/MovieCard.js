@@ -1,19 +1,17 @@
-import React from "react";
+import {useNavigate} from "react-router";
 
-export const MovieCard = (props) => {
-  <>
-    <div className="card-component">
-      <div className="containers">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-          alt="Avatar"
-          className="image"
-        />
-        <div className="middle">
-          <div className="text">John Doe</div>
+export const MovieCard =({movie})=>{
+    const navigate = useNavigate();
+    const routeHandler = ()=>{
+        navigate('/movie/'+ movie.id)
+    }
+    return <div className="movie-card" onClick={routeHandler}>
+        <img src={movie.medium_cover_image} alt=""/>
+        <div className="content">
+            <div className="movie-title">
+                {movie.title}
+            </div>
+            <div className="year">{movie.year}</div>
         </div>
-      </div>
     </div>
-  </>;
-return 
-};
+}

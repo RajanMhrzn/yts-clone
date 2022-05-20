@@ -3,8 +3,10 @@ import React from "react";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import "../css/Browse.css";
+import {MoviesList} from "./MoviesList";
 
 const Browse = () => {
+  // const[filteredData , setFilteredData] = useState([]);
   return (
     <div className="browser-body">
       <Header />
@@ -12,9 +14,11 @@ const Browse = () => {
         <div className="search-term">
           <input
             type="search"
+            // value={keyword} //entering value --> passing keyword
             className="search"
             class="form-control rounded"
             placeholder="Search"
+            // onInput={(e)=>setKeyword(e.target.value)}   //store value when event occured
             aria-label="Search"
             aria-describedby="search-addon"
           />
@@ -300,7 +304,9 @@ const Browse = () => {
           </div>
         </div>
       </div>
-      <div className="movie-list"></div>
+      <div className="movie-list">
+      <MoviesList/>
+      </div>
       <div className="footer">
         <Footer />
       </div>

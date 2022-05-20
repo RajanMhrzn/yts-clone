@@ -2,6 +2,8 @@
 import React from "react";
 import logo from "../images/website/logo.png";
 import "../css/Header.css";
+import {NavLink} from "react-router-dom";
+// import { Popover, Typography  } from '@mui/material';
 
 const Header = () => {
   return (
@@ -39,24 +41,24 @@ const Header = () => {
                 <span class="input-group-text border-0" id="search-addon">
                   <i class="fas fa-search"></i>
                 </span>
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-                <a className="nav-link" href="#">
-                  4K
-                </a>
-                <a className="nav-link" href="#">
-                  Trending
-                </a>
-                <a className="nav-link" href="#">
-                  Browse Movies
-                </a>
-                <a className="nav-link" href="#">
-                  Login
-                </a>
-                <a className="nav-link" href="#">
-                  Register
-                </a>
+                <NavLink className="nav-link" to={'/'}>Home</NavLink>
+                <NavLink className="nav-link" to={'/'}>Trending</NavLink>
+                <NavLink className="nav-link" to={'/browse'}>Browse</NavLink>
+                <NavLink className="nav-link" to={'#'}>4k</NavLink>
+                <NavLink className="nav-link" to={'#'}>Login</NavLink>
+                {/* <Popover
+                  id={id}
+                  open={open}
+                  anchorEl={anchorEl}
+                  onClose={handleClose}
+                  anchorOrigin={{
+                    vertical: "bottom",
+                    horizontal: "left",
+                  }}
+                  >
+                  <Typography sx={{ p: 2 }}>The content of the Popover.</Typography>
+                </Popover> */}
+                <NavLink className="nav-link" to={'#'}>Register</NavLink>
               </div>
             </div>
           </div>

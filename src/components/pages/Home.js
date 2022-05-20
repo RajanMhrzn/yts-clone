@@ -52,9 +52,8 @@ const home = () => {
       <MoviesList/>
       </div>
 
-      <div className="latest-movie">Latest YIFY Movies Torrents</div>
-      <div className="upcoming-movie">Upcoming YIFY Movies</div>
-      <MoviesList/>
+      {/* <div className="latest-movie">Latest YIFY Movies Torrents</div>
+      <div className="upcoming-movie">Upcoming YIFY Movies</div> */}
     </div>
     
     <Footer/>

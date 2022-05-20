@@ -1,6 +1,7 @@
 .browser-search{
     background: #383838;
     color: #fff;
+    padding: 10px;
 }
 
 .search-term{
@@ -43,4 +44,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin-left: 50px;
+}
+.movie-list{
+    background-color: #171717;
+    color: #fff;
 }

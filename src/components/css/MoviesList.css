@@ -1,21 +1,16 @@
-.movie-info{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.movie{
+    display: inline-block;
+    flex-direction: column;
 }
 .movie-detail{
-    
-    font-size: 20px;
-    padding: 20px;
+    padding: 20px; 
 }
 .movie-title{
+    font-size: 15px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-
+    justify-content: center;
 }
 .movie-image{
-    height: 250px;
-    width: 200px;
+    height: 300px;
+    width: 250px;
 }

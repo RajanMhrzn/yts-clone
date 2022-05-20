@@ -36,6 +36,11 @@
   margin-right: 7px;
 }
 
+.card-component{
+  display: flex;
+  flex-direction: row;
+}
+
 .containers {
   width: 50px;
   height: 300px;
